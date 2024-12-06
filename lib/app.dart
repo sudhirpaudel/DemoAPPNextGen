@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smapp/config/colors.dart';
+import 'package:smapp/screens/dashboard_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,12 +10,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'School Management APP',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
        
         colorScheme: ColorScheme.fromSeed(seedColor:primaryColor ),
         useMaterial3: true,
       ),
-      home: Container()
+      home: const DashboardPage()
     );
   }
 }
